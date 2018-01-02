@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(Boolean aBoolean) {
             if (aBoolean) {
                 Log.d(TAG, "合并成功 开始安装新apk");
-                ApkUtils.installApk(MainActivity.this, Contants.NEW_APK_PATH);
+                ApkUtils.installNormal(MainActivity.this, Contants.NEW_APK_PATH);
             }
         }
     }

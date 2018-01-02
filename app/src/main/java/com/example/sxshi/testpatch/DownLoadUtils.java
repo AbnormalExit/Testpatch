@@ -42,7 +42,7 @@ public class DownLoadUtils {
             byte[] buffer = new byte[1 * 1024];
             int len = 0;
             while ((len = is.read(buffer)) != -1) {
-                Log.d("ssx", String.valueOf(len));
+//                Log.d("ssx", String.valueOf(len));
                 os.write(buffer, 0, len);
             }
         } catch (Exception e) {
